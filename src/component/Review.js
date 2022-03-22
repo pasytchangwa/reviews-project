@@ -4,7 +4,7 @@ import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
 const Review = ({review, position, handleClickRight, handleClickLeft, randomPerson}) => {
  const {image, name, job, text} = review[position]
   return (
-    <section className='review'>
+    <article className='review'>
       <div className='img-container'>
         <img src={image} alt={name} className='person-img' />
         <span className='quote-icon'>
@@ -23,9 +23,9 @@ const Review = ({review, position, handleClickRight, handleClickLeft, randomPers
         </button>
       </div>
       <button className="random-btn" onClick={randomPerson}>
-        surprise me
+        Random review
       </button>
-    </section>
+    </article>
   );
 }
 
